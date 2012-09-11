@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- WARNING: Eclipse auto-generated file.
+              Any modifications will be overwritten.
+              To include a user specific buildfile here, simply create one in the same
+              directory with the processing instruction <?eclipse.ant.import?>
+              as the first entry and export the buildfile again. -->
+<project basedir="." default="build" name="TellMeAJoke" xmlns:ivy="antlib:org.apache.ivy.ant">
+    <property environment="env"/>
+    <property name="ECLIPSE_HOME" value="../../../../../../eclipse-juno/eclipse"/>
+    <property name="debuglevel" value="source,lines,vars"/>
+    <property name="target" value="1.6"/>
+    <property name="source" value="1.6"/>
+    <path id="GlassFish Server Open Source Edition 3 (Java EE 6) [GlassFish Server Open Source Edition 3 (Java EE 6)].libraryclasspath">
+        <pathelement location="../../../arquivos K19/glassfish-3.0.1-with-hibernate/glassfishv3/glassfish/modules/jsf-api.jar"/>
+        <pathelement location="../../../arquivos K19/glassfish-3.0.1-with-hibernate/glassfishv3/glassfish/modules/jsf-impl.jar"/>
+        <pathelement location="../../../arquivos K19/glassfish-3.0.1-with-hibernate/glassfishv3/glassfish/modules/jstl-impl.jar"/>
+        <pathelement location="../../../arquivos K19/glassfish-3.0.1-with-hibernate/glassfishv3/glassfish/modules/bean-validator.jar"/>
+        <pathelement location="../../../arquivos K19/glassfish-3.0.1-with-hibernate/glassfishv3/glassfish/modules/endorsed/javax.annotation.jar"/>
+        <pathelement location="../../../arquivos K19/glassfish-3.0.1-with-hibernate/glassfishv3/glassfish/modules/endorsed/jaxb-api-osgi.jar"/>
+        <pathelement location="../../../arquivos K19/glassfish-3.0.1-with-hibernate/glassfishv3/glassfish/modules/endorsed/webservices-api-osgi.jar"/>
+        <pathelement location="../../../arquivos K19/glassfish-3.0.1-with-hibernate/glassfishv3/glassfish/modules/glassfish-api.jar"/>
+        <pathelement location="../../../arquivos K19/glassfish-3.0.1-with-hibernate/glassfishv3/glassfish/modules/grizzly-comet.jar"/>
+        <pathelement location="../../../arquivos K19/glassfish-3.0.1-with-hibernate/glassfishv3/glassfish/modules/grizzly-cometd.jar"/>
+        <pathelement location="../../../arquivos K19/glassfish-3.0.1-with-hibernate/glassfishv3/glassfish/modules/javax.ejb.jar"/>
+        <pathelement location="../../../arquivos K19/glassfish-3.0.1-with-hibernate/glassfishv3/glassfish/modules/javax.enterprise.deploy.jar"/>
+        <pathelement location="../../../arquivos K19/glassfish-3.0.1-with-hibernate/glassfishv3/glassfish/modules/javax.jms.jar"/>
+        <pathelement location="../../../arquivos K19/glassfish-3.0.1-with-hibernate/glassfishv3/glassfish/modules/javax.management.j2ee.jar"/>
+        <pathelement location="../../../arquivos K19/glassfish-3.0.1-with-hibernate/glassfishv3/glassfish/modules/javax.persistence.jar"/>
+        <pathelement location="../../../arquivos K19/glassfish-3.0.1-with-hibernate/glassfishv3/glassfish/modules/javax.resource.jar"/>
+        <pathelement location="../../../arquivos K19/glassfish-3.0.1-with-hibernate/glassfishv3/glassfish/modules/javax.security.auth.message.jar"/>
+        <pathelement location="../../../arquivos K19/glassfish-3.0.1-with-hibernate/glassfishv3/glassfish/modules/javax.security.jacc.jar"/>
+        <pathelement location="../../../arquivos K19/glassfish-3.0.1-with-hibernate/glassfishv3/glassfish/modules/javax.servlet.jar"/>
+        <pathelement location="../../../arquivos K19/glassfish-3.0.1-with-hibernate/glassfishv3/glassfish/modules/javax.servlet.jsp.jar"/>
+        <pathelement location="../../../arquivos K19/glassfish-3.0.1-with-hibernate/glassfishv3/glassfish/modules/javax.servlet.jsp.jstl.jar"/>
+        <pathelement location="../../../arquivos K19/glassfish-3.0.1-with-hibernate/glassfishv3/glassfish/modules/javax.transaction.jar"/>
+        <pathelement location="../../../arquivos K19/glassfish-3.0.1-with-hibernate/glassfishv3/glassfish/modules/jersey-gf-bundle.jar"/>
+        <pathelement location="../../../arquivos K19/glassfish-3.0.1-with-hibernate/glassfishv3/glassfish/modules/jersey-gf-statsproviders.jar"/>
+        <pathelement location="../../../arquivos K19/glassfish-3.0.1-with-hibernate/glassfishv3/glassfish/modules/jersey-multipart.jar"/>
+        <pathelement location="../../../arquivos K19/glassfish-3.0.1-with-hibernate/glassfishv3/glassfish/modules/jsr311-api.jar"/>
+        <pathelement location="../../../arquivos K19/glassfish-3.0.1-with-hibernate/glassfishv3/glassfish/modules/mail.jar"/>
+        <pathelement location="../../../arquivos K19/glassfish-3.0.1-with-hibernate/glassfishv3/glassfish/modules/weld-osgi-bundle.jar"/>
+        <pathelement location="../../../arquivos K19/glassfish-3.0.1-with-hibernate/glassfishv3/glassfish/modules/org.eclipse.persistence.antlr.jar"/>
+        <pathelement location="../../../arquivos K19/glassfish-3.0.1-with-hibernate/glassfishv3/glassfish/modules/org.eclipse.persistence.asm.jar"/>
+        <pathelement location="../../../arquivos K19/glassfish-3.0.1-with-hibernate/glassfishv3/glassfish/modules/org.eclipse.persistence.core.jar"/>
+        <pathelement location="../../../arquivos K19/glassfish-3.0.1-with-hibernate/glassfishv3/glassfish/modules/org.eclipse.persistence.jpa.jar"/>
+        <pathelement location="../../../arquivos K19/glassfish-3.0.1-with-hibernate/glassfishv3/glassfish/modules/org.eclipse.persistence.jpa.modelgen.jar"/>
+        <pathelement location="../../../arquivos K19/glassfish-3.0.1-with-hibernate/glassfishv3/glassfish/modules/org.eclipse.persistence.oracle.jar"/>
+        <pathelement location="../../../arquivos K19/glassfish-3.0.1-with-hibernate/glassfishv3/glassfish/modules/jaxb-osgi.jar"/>
+        <pathelement location="../../../arquivos K19/glassfish-3.0.1-with-hibernate/glassfishv3/glassfish/modules/webservices-connector.jar"/>
+        <pathelement location="../../../arquivos K19/glassfish-3.0.1-with-hibernate/glassfishv3/glassfish/modules/webservices-osgi.jar"/>
+        <pathelement location="../../../arquivos K19/glassfish-3.0.1-with-hibernate/glassfishv3/glassfish/modules/webservices.security.jar"/>
+        <pathelement location="../../../arquivos K19/glassfish-3.0.1-with-hibernate/glassfishv3/glassfish/modules/woodstox-osgi.jar"/>
+        <pathelement location="../../../arquivos K19/glassfish-3.0.1-with-hibernate/glassfishv3/mq/lib/jaxm-api.jar"/>
+    </path>
+    <path id="Web App Libraries.libraryclasspath"/>
+    <path id="EAR Libraries.libraryclasspath"/>
+    <path id="TellMeAJoke.classpath">
+        <pathelement location="build/classes"/>
+        <path refid="GlassFish Server Open Source Edition 3 (Java EE 6) [GlassFish Server Open Source Edition 3 (Java EE 6)].libraryclasspath"/>
+        <path refid="Web App Libraries.libraryclasspath"/>
+        <path refid="EAR Libraries.libraryclasspath"/>
+        <pathelement location="lib/ivy-2.3.0-rc1.jar"/>
+    </path>
+    
+    
+    <!-- INIT: related to ivy -->
+    
+     <path id="ivy.lib.path">
+        <fileset dir="ivy-lib" includes="*.jar"/>
+    </path>
+      
+    <taskdef resource="org/apache/ivy/ant/antlib.xml" uri="antlib:org.apache.ivy.ant" classpathref="ivy.lib.path"/>
+  
+  <target name="clean-dependencies" >
+        <delete dir="lib" />
+        <mkdir dir="lib" />
+        <mkdir dir="report" />    
+    </target>
+     
+    <target name="update-dependencies">
+          <ivy:retrieve pattern="WebContent/WEB-INF/lib/[artifact]-[revision].[ext]" />
+          <ivy:report todir="report"/>
+    </target>
+    
+    <!-- END: related to ivy -->
+    <target name="init">
+        <mkdir dir="build/classes"/>
+        <copy includeemptydirs="false" todir="build/classes">
+            <fileset dir="src">
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="build/classes">
+            <fileset dir="test">
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="clean">
+        <delete dir="build/classes"/>
+    </target>
+    <target depends="clean" name="cleanall"/>
+    <target depends="build-subprojects,build-project" name="build"/>
+    <target name="build-subprojects"/>
+    <target depends="init" name="build-project">
+        <echo message="${ant.project.name}: ${ant.file}"/>
+        <javac debug="true" debuglevel="${debuglevel}" destdir="build/classes" includeantruntime="false" source="${source}" target="${target}">
+            <src path="src"/>
+            <src path="test"/>
+            <classpath refid="TellMeAJoke.classpath"/>
+        </javac>
+    </target>
+    <target description="Build all projects which reference this project. Useful to propagate changes." name="build-refprojects"/>
+    <target description="copy Eclipse compiler jars to ant lib directory" name="init-eclipse-compiler">
+        <copy todir="${ant.library.dir}">
+            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
+        </copy>
+        <unzip dest="${ant.library.dir}">
+            <patternset includes="jdtCompilerAdapter.jar"/>
+            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
+        </unzip>
+    </target>
+    <target description="compile project with Eclipse compiler" name="build-eclipse-compiler">
+        <property name="build.compiler" value="org.eclipse.jdt.core.JDTCompilerAdapter"/>
+        <antcall target="build"/>
+    </target>
+    
+   
+</project>

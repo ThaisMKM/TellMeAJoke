@@ -1,0 +1,31 @@
+
+<ivy-module version="2.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://ant.apache.org/ivy/schemas/ivy.xsd">
+
+	<info module="tests" organisation="com.tmkm.tellmeajoke"></info>
+
+	<configurations>
+		<conf name="webapp" />
+		<conf name="test" />
+	</configurations>
+
+	<dependencies>
+		<dependency org="org.mockito" name="mockito-all" rev="1.9.5-rc1"
+			conf="test->default" />
+		<dependency org="org.hibernate" name="hibernate-annotations"
+			rev="3.5.6-Final" conf="webapp->default" />
+
+		<dependency org="org.apache.myfaces.core" name="myfaces-impl"
+			rev="2.1.8" conf="webapp->default" />
+
+		<dependency org="org.apache.myfaces.trinidad" name="trinidad-api"
+			rev="2.0.1" conf="webapp->default" />
+
+
+	</dependencies>
+
+	<conflicts>
+		<manager name="latest-revision" />
+	</conflicts>
+</ivy-module>
