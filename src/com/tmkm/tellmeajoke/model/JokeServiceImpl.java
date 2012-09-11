@@ -25,4 +25,6 @@ public class JokeServiceImpl implements JokeService{
 			return null;
 		}
 	}
+	
+	
 }

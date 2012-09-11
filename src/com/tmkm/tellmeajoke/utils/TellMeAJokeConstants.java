@@ -14,8 +14,7 @@ public enum TellMeAJokeConstants {
 		this.value = value;
 	}
 
-	public String getValue() {
-		
+	public String getValue() {		
 		return p.getProperty(value);
 	}
 

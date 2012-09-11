@@ -1,18 +1,13 @@
 package com.tmkm.tellmeajoke.managedBeans;
 
-import java.io.File;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.OutputStream;
-
 import javax.faces.bean.ManagedBean;
 
 import org.apache.myfaces.trinidad.model.UploadedFile;
 import org.primefaces.event.FileUploadEvent;
 
 import com.sun.istack.logging.Logger;
-import com.tmkm.tellmeajoke.utils.TellMeAJokeConstants;
+import com.tmkm.tellmeajoke.model.FileService;
+import com.tmkm.tellmeajoke.model.FileServiceImpl;
 
 @ManagedBean
 public class FileMB {
@@ -33,35 +28,12 @@ public class FileMB {
 		// in DB
 	}
 
-	private void saveFile(UploadedFile file) {
-		String pathToJoke = TellMeAJokeConstants.PATH_TO_JOKES.getValue();
-		InputStream fileInputStream = null;
-		OutputStream fileOutputStream = null;
-		try {
-			fileInputStream = file.getInputStream();
-			fileOutputStream = new FileOutputStream(new File(pathToJoke + File.pathSeparator + file.getFilename() + "_"+System.currentTimeMillis()));
-			 
-			int read = 0;
-			byte[] bytes = new byte[1024];
-		 
-			while ((read = fileInputStream.read(bytes)) != -1) {
-				fileOutputStream.write(bytes, 0, read);
-			}
-		 			
-			fileOutputStream.flush();
-			
-
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		
-		} finally{
-			try{
-				fileInputStream.close();
-				fileOutputStream.close();
-			} catch(Exception e){
-				logger.fine("Issue closing streams");
-			}
+	private String saveFile(UploadedFile file) {
+		FileService fileService = new FileServiceImpl();//TODO: refactor to use injection in the future
+		if (fileService.saveJokeFile(file)){
+			return "joke-uploaded";//TODO: create jole-uploaded page
+		} else{
+			return "joke-not-uploaded";//TODO: create page. actually was wondering just to send error message
 		}
 
 	}

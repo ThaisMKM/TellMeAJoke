@@ -47,7 +47,8 @@ public class JokeMB {
 		this.listOfJokes = listOfJokes;
 	}
 	
-	public void addNewJoke(){
+	public String addNewJoke(){
+		return "insertJoke";
 		//salva no dao os novos dados do joke inserido
 		//vem da tela o nome , a pessoa q inseriu e temos tb o jokemb, q salva na pasta a nova joke
 		//preciso recuperar o caminho pra joke do fileMB(ainda nao sei como) e entao salvar tudo como um novo joke DAO

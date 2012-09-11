@@ -10,4 +10,6 @@ public interface JokeService {
 	
 	public Joke getRandomJoke();
 	
+	
+	
 }
